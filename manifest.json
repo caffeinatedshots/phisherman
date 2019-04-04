@@ -7,6 +7,7 @@
 		"scripts": ["background.js"],
 		"persistent": false
 	},
+	"web_accessible_resources": ["rf_clf_results.json"],
 	"page_action": {
 		"default_popup": "phishing.html",
 		"default_icon": {

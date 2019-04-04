@@ -1,6 +1,6 @@
 'use strict';
 
-let url = document.getElementById('url');
-chrome.storage.sync.get('url', function(data) {
-  url.textContent = data.url;
+let result = document.getElementById('result');
+chrome.storage.sync.get('result', function(data) {
+  result.textContent = "This website is most likely " + data.result;
 });
