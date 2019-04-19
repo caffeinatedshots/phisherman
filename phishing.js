@@ -2,5 +2,8 @@
 
 let result = document.getElementById('result');
 chrome.storage.sync.get('result', function(data) {
-  result.textContent = "This website is most likely " + data.result;
+  result.textContent = data.result;
+  if (data.result == "Phishing") {
+  	result.className = "button gray";
+  }
 });
